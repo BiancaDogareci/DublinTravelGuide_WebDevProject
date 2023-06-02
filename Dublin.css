@@ -1,0 +1,584 @@
+/* Drop down button */
+nav {
+    overflow: hidden;
+    background-color: rgb(33, 75, 40);
+    text-align: center;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav a {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 28px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 10px;
+    background-color: inherit;
+    font-family: inherit;
+    text-align: center;
+    margin: 0;
+    width: 100%; /* Add this line */
+    box-sizing: border-box; /* Add this line */
+}
+
+nav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(113, 161, 120);
+    width: 100%;
+    transition: 1s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(81, 127, 89);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-contentcontent a:hover {
+    background-color: rgb(81, 127, 89);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*Other*/
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: rgba(147, 202, 155);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+h1 {
+    color: rgb(33, 75, 40);
+    font-size: 4vw;
+    font-weight: bold;
+    background-color: rgba(147, 202, 155, 0.677);
+    display: inline-block;
+    /* Make the background color apply only to the area surrounding the text */
+    padding: 2px;
+    /* Add some padding to create space between the text and the background color */
+    width: fit-content;
+    /* Make the element shrink-to-fit the content inside it */
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+h3 {
+    text-indent: 30px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    font-size: larger;
+}
+
+a {
+    font-style: italic;
+}
+
+.link {
+    color:  rgb(189, 238, 197);
+}
+
+.link2 {
+    color:rgb(25, 60, 16);
+}
+
+figcaption {
+    color: rgb(53, 77, 59);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.601);
+}
+
+.box2 {
+    background-color: rgba(33, 75, 40, 0.608);
+    color: white;
+    padding: 20px;
+    border-bottom: 15px solid rgb(33, 75, 40);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.601);
+    border-radius: 20px;
+}
+
+header {
+    background-image: url("Photos/dublin_background.png");
+    background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
+    background-size: cover;
+    /* Scale the background image to cover the entire element */
+    background-position: center center;
+    /* Center the background image */
+}
+
+.background {
+    border: 0.11vw solid rgba(147, 202, 155);
+    padding: 14.63vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section,
+.box3 {
+    background-color: rgb(33, 75, 40);
+    color: white;
+    padding: 0.5vw;
+    font-size: larger;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.601);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.box4 {
+    color: white;
+    padding: 1vw;
+    width: 90%;
+    font-size: larger;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.box5 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(33, 75, 40);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.601);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.space {
+    background-color: rgba(147, 202, 155);
+    padding: 1vw;
+}
+
+.title {
+    text-align: center;
+    font-size: larger;
+}
+
+/*For columns (at the beginning and end)*/
+.column,
+.column2 {
+    width: 23%;
+    background-color: rgb(33, 75, 40);
+    color: white;
+    padding: 15px;
+    border: 3px solid rgb(33, 75, 40);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.601);
+    border-radius: 10px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*For photo gallery*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*Responsive for 768px and 480px*/
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .box {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    main {
+        padding: 0%;
+        margin: 0%;
+        border: 0%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row > * {
+        margin-bottom: 20px;
+    }
+
+    .column,
+    .column2 {
+        width: 100%;
+    }
+
+    [class*="green"] {
+        width: 100%;
+    }
+
+    .box4 {
+        color: white;
+        width: 100%;
+        font-size: larger;
+    }
+
+    .box5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(33, 75, 40);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .box {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    main {
+        padding: 0%;
+        margin: 0%;
+        border: 0%;
+    }
+
+    .column,
+    .column2 {
+        width: 100%;
+    }
+
+    .box4 {
+        color: white;
+        width: 100%;
+        font-size: larger;
+    }
+
+    .box5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(33, 75, 40);
+    }
+
+}
+
+
+
+/*Animated clover,Dublin html*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+}
+
+.container img {
+    box-shadow: none !important;
+}
+
+.animated-photo {
+    width: 200px;
+    height: 200px;
+    transition: transform 1s ease-in-out;
+}
+
+.animated-photo:hover {
+    transform: rotate(360deg);
+}
+
+
+
+/*Animated footer*/
+.animation {
+    position: relative;
+    width: auto;
+    height: 75px;
+    background-color:rgb(25, 60, 16);
+    animation: pulse 3s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.animation span {
+    position: absolute;
+    color: rgb(25, 60, 16);
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    /*moves the text 50px to the left and 50px up*/
+    top: 50%;
+    /*Align the text in the middle*/
+    left: 50%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+}
+
+
+/* Video */
+.wrapper {
+    --color: #1F242D;
+    --color-invert: #ffffff;
+    --clip-path: circle(80px at left);
+    --clip-path-hover: circle(120px at left);
+    --clip-path-clicked: circle(100vw at left);
+    --duration: .4s;
+    --timing-function: ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .wrapper .video {
+    height: 30vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+  }
+  
+  .wrapper .video video {
+    position: fixed;
+    background: #c4cbde;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+  
+  .wrapper .text {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2px;
+    opacity: var(--opacity, 1);
+    transition: opacity .3s var(--timing-function) .2s;
+  }
+  
+  .wrapper .text::before,
+  .wrapper .text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    right: 25px;
+    height: 0;
+  }
+  
+  .wrapper .text::before {
+    box-shadow: 26px 0 0 1px var(--color);
+    right: var(--r, 100%);
+    opacity: var(--opacity, 0);
+    transition: right .5s ease-in, opacity .1s linear;
+  }
+  
+  .wrapper .text::after {
+    box-shadow: 26px 0 0 1px var(--color-invert);
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+  }
+  
+  .wrapper .text > span::before,
+  .wrapper .text > span::after {
+    content: attr(data-text);
+    padding-left: 26px;
+  }
+  
+  .wrapper .text > span::before {
+    color: var(--color);
+  }
+  
+  .wrapper .text > span::after {
+    color: var(--color-invert);
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+    position: absolute;
+    left: 0;
+  }
+  
+  .wrapper input {
+    width: 220px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 40px;
+    outline: none;
+    z-index: 2;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .wrapper input:focus {
+    outline: 0;
+  }
+  
+  .wrapper input:hover ~ .video {
+    clip-path: var(--clip-path-hover);
+  }
+  
+  .wrapper input:hover ~ .text::before {
+    --r: 25px;
+    --opacity: 1;
+  }
+  
+  .wrapper input:hover ~ .text::after {
+    clip-path: var(--clip-path-hover);
+  }
+  
+  .wrapper input:hover ~ .text > span::after {
+    clip-path: var(--clip-path-hover);
+}
+
+.wrapper input:checked ~ .video {
+  clip-path: var(--clip-path-clicked);
+}
+
+.wrapper input:checked ~ .text {
+    --opacity: 0;
+    transition: opacity .3s var(--timing-function);
+  }
+
+.wrapper input:checked ~ .text::after {
+  clip-path: var(--clip-path-clicked);
+}
+
+.wrapper input:checked ~ .text > span::after {
+  clip-path: var(--clip-path-clicked);
+}
+
+.wrapper input:checked {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+/* Layout */
+  main {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: "nav article aside";
+  }
+  
+  main > nav, 
+  main > aside {
+    background: rgb(72, 127, 81);
+  }
+
+  
+  article {
+    background: rgba(147, 202, 155);
+  }
+  
+  footer {
+    background: rgb(33, 75, 40);
+    color:  rgba(147, 202, 155);
+  }
+  
+  footer, article, aside {
+    padding: 1em;
+  }

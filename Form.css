@@ -1,0 +1,135 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "nav article aside";
+}
+
+main>nav,
+main>aside {
+    background: rgb(72, 127, 81);
+}
+
+header {
+    background: rgb(33, 75, 40);
+    color: rgba(147, 202, 155);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+article {
+    background: rgba(147, 202, 155);
+}
+
+footer {
+    background: rgb(33, 75, 40);
+    color: rgba(147, 202, 155);
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1em;
+}
+
+.link {
+    color: rgb(189, 238, 197);
+}
+
+.link2 {
+    color: rgb(25, 60, 16);
+}
+
+
+article label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    font-size: large;
+    color: rgb(33, 75, 40);
+}
+
+article input,
+article textarea {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+article button {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: rgba(33, 75, 40, 0.422);
+    color: rgba(33, 75, 40);
+    box-shadow: 0 0 10px 5px rgba(33, 75, 40); /* Adjust the values to customize the glow effect */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  article button:hover {
+    box-shadow: 0 0 22px 12px rgba(33, 75, 40); /* Adjust the values to customize the glow effect */
+  }
+
+  .submissions {
+    border: 3px solid rgb(33, 75, 40);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
+    padding: 5px;
+  }
+
+  #advertisement {
+    color: rgba(147, 202, 155);
+    font-size: 20px;
+  }
+
+  h1 {
+    color: rgb(33, 75, 40);
+    font-size: 3vw;
+    font-weight: bold;
+    background-color: rgba(147, 202, 155, 0.677);
+    display: inline-block;
+    padding: 2px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+header {
+    background-image: url("Photos/TrinityCollegeLibrary.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 70px;
+}
+
+.header-conten {
+    border: 0.11vw solid rgba(147, 202, 155);
+    padding: 14.63vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clover {
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+  }
+
